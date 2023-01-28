@@ -1,0 +1,73 @@
+
+<div class="container">
+    <hr>
+    <div class="text-center m-4">
+        <h1>
+            Agenda tus Tareas del Día
+        </h1>
+    </div>
+    <hr>
+<form action="/create" method="post" class="row g-3 needs-validation m-4" novalidate>
+    <div class="col-md-4">
+    <label for="ttitulo" class="form-label">Título </label>
+    <input
+        type="text"
+        class="form-control"
+        id="titulo"
+        name="titulo"
+        value=""
+        required
+    />
+    <div class="valid-feedback">
+        Looks good!
+    </div>
+    </div>
+    <div class="col-md-4">
+    <label for="autor" class="form-label">Autor</label>
+    <input
+        type="text"
+        class="form-control"
+        id="autor"
+        name="autor"
+        value=""
+        required
+    />
+    <div class="valid-feedback">
+        Looks good!
+    </div>
+    </div>
+    <div class="col-md-6">
+    <label for="descripcion" class="form-label">Descripcion</label>
+    <textarea 
+        type="text" 
+        class="form-control" 
+        id="descripcion"
+        name="descripcion" 
+        required 
+    ></textarea>
+    <div class="invalid-feedback">
+        Please provide a valid city.
+    </div>
+    </div>
+    <div class="col-md-3">
+    <label for="nivel" class="form-label">Nivel</label>
+    <select 
+        class="form-select" 
+        id="nivel"
+        name="nivel"   
+        required
+    >
+        <option selected disabled value="">Selecciona...</option>
+        <option>Importancia Baja</option>
+        <option>Importancia Media</option>
+        <option>Urgente</option>
+    </select>
+    <div class="invalid-feedback">
+        Please select a valid state.
+    </div>
+    </div>
+    <div class="col-12 text-center">
+    <button class="btn btn-primary w-50" type="submit">Enviar Tarea</button>
+    </div>
+</form>
+</div>
